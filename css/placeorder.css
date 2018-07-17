@@ -1,0 +1,45 @@
+ul{list-style:none;}
+body{background-color:#eee;}
+.con{background-color:white;}
+.a11{font-size:16px;}
+.i1{color:#999;font-size:16px;}
+.sh{font-size:1.8px;font-weight:bolder;color:black;}
+.mark{color:red;border:1px solid red;font-size:1.2px;border-radius:3px;padding:1px 3px;margin-left:5px;}
+.add{color:#aaa;font-size:1.4px;}
+.ir{font-size:2px;line-height:2px;}
+.line1{background-image:url('../images/placeorder/peraddress.png');background-size:21% 100%;width:100vw;height:4px;background-repeat:repeat-x;}
+.paycont{margin:20px 0;}
+.h311{}
+
+ul{list-style:none;}
+body{background-color:#eee;}
+.con{background-color:white;}
+.con2{background-color:#F5F5F5;border-bottom:1px solid #ddd;}
+.i1{color:#999;}
+.check-box{width:20px;height:20px;border:1px solid #aaa;border-radius:50%;}
+.fontsize1{font-size:14px;}
+.fontsize2{font-size:14px;color:#aaa;}
+.changeNum{width:40px;text-align:center;color:black;}
+.jj{width:30px;display:inline-block;text-align:center;color:black;}
+.spimg{width:120px;height:120px;}
+.select{background-image:url('../images/shopcart/check.png');background-size:100% 100%;}
+.intersting{color:#aaa;font-size:14px;}
+.zy{color:red;border:1px solid red;border-radius:5px;padding:1px 3px;margin-left:5px;margin-right:5px;}
+.p-xh{color:black;font-size:13px;text-align:left;}
+.jg-xh{color:red;float:left;}
+.a1{border-right:3px solid #eee;border-bottom:5px solid #eee;}
+.a2{border-left:3px solid #eee;border-bottom:5px solid #eee;}
+.img4f{width:20%;display:inline-block;}
+.img4{width:34px;height:39px;}
+.p4{}
+.main-nav{position:fixed;bottom:0;}
+.main-nav{width:100vw;display:inline-block;}
+.bottom1{margin-bottom:150px;}
+.allprice{color:red;font-size:24px;}
+.jiesuan{background-color:red;color:white;font-size:25px;padding:1px 1px;display:block;}
+.rela1{}
+.rela2{}
+.repla{display:none;}
+.shouchang{color:#aaa;margin-left:20px;}
+.del{color:#aaa;margin-left:20px;}
+.select1{color:red;}

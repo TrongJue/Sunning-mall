@@ -1,0 +1,27 @@
+		@media screen and (min-width:415px) and (max-width:1024px){
+			html {font-size: 100%;}
+		}
+		@media screen and (min-width:411px) and (max-width:414px){
+			html {font-size: 62.5%;}
+		}
+		@media screen and (min-width:360px) and (max-width:410px){
+			html {font-size: 50%;}
+		}
+		@media screen and (min-width:300px) and (max-width:359px){
+			html {font-size: 40%;}
+		}
+.logoimg{width:7rem;height:1.5rem;}
+.i1{font-size:1.2rem;color:#999;}
+.zy{color:red;border:1px solid red;border-radius:5px;padding:2px 3px;}
+.spname{font-size:16px;font-weight:bolder;}
+.jiage{font-size:25px;font-weight:bolder;}
+.jiage1{font-size:25px;font-weight:bolder;}
+.gold-list{}
+.i2{color:red;}
+.p-xh{color:black;font-size:13px;text-align:left;}
+.jg-xh{color:red;float:left;}
+.footer{font-size:14px;color:#999;}
+.rocket{
+	background-image:url('../images/index/rtop.png');background-size:100% 100%;width:44px;height:44px;
+	position:fixed;bottom:100px;right:20px;cursor:pointer;display:none;z-index:100;
+}

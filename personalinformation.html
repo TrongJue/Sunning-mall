@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+  <title>suning</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <style>
+    *{font-size:18px;font-family:monospac; }
+    ul{list-style:none;}
+
+    .tabtitle{color:white;font-size:18px;font-weight:bloder;background-color:orange !important;}
+    form{text-align:center;}
+
+    input{
+      display:block;width:90vw;border:none;color:#666;font-size:16px;text-indent:2em;
+      background-color:#eee;border-radius:5px;height:5vh;margin-top:5px;
+      
+    }
+    input::after{content:'';border-bottom:10px dashed #eee;display:block;height:1px;}
+    ul.list>li{font-size:1.5rem;color:#999;border-bottom:1px dashed #ddd;margin-right:4rem;padding-bottom: 10px;}
+    span{
+      color:black;font-size:1.5rem;margin-left:10px;margin-top:10px;display:inline-block;
+      
+    }
+    .button1{position:fixed;bottom:0;width:100vw;background-color:red;border:none;}
+    .tab1{border:none;padding:0 10px;}
+    .save{background-color:#ccc;border:none;border-radius:5px;}
+  </style>
+</head>
+<body>
+  <div class='am-g am-padding-vertical-sm con' style="border-bottom:1px solid #ddd;">
+    <div class='am-u-sm-12 am-text-center'>
+      <a href="personal.html"><i style="color:#999;" class='am-icon-arrow-left am-fl i1'></i></a><span>我的易购</span><a href=""></a>
+    </div>
+  </div>
+
+  <div class='am-margin-top'>
+    <ul class='list'>
+      <li>姓名:<span class='name'>朱大壮</span></li>
+      <li>性别:<span class='sex'>男</span></li>
+      <li>电话:<span class='tel'>15764225519</span></li>
+      <li>邮箱:<span class='mail'>98417976@qq.com</span></li>
+      <li>地址:<span class='add'>山东青岛城阳区派出所110号</span></li>
+    </ul>
+  </div>
+
+  <button
+    type="button"
+    class="am-btn am-btn-secondary button1"
+    data-am-modal="{target: '#my-actions'}">
+    修改信息
+  </button>
+
+  <div class="am-modal-actions" id="my-actions">
+    <div class="am-modal-actions-group">
+      <ul class="am-list">
+        <li class="am-modal-actions-header tabtitle">修改信息</li>
+        <li class='tab1'>
+          <form action="personalinformation_submit" method="get" accept-charset="utf-8">
+            <input type="text" name="" id="name" value="" placeholder="姓名" />
+            <input type="text" name="" id="sex" value="" placeholder="性别" />
+            <input type="text" name="" id="tel" value="" placeholder="电话" />
+            <input type="text" name="" id="mail" value="" placeholder="邮箱" />
+            <input type="text" name="" id="add" value="" placeholder="地址" />
+          </form> 
+          <div class="am-modal-actions-group">
+            <button class="am-btn am-btn-secondary am-btn-block save" data-am-modal-close>确定</button>
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+    
+  </div>
+<!--在这里
+编写你的代码-->
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+ <!--  // <script src="assets/js/jquery.min.js"></script> -->
+ <script src="js/jquery-3.3.1.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src='assets/js/handlebars.min.js'></script>
+  <script src='assets/js/amazeui.widgets.helper.js'></script>
+  <script>
+    $('form')[0].name.value=$('.name').text();
+    $('form')[0].sex.value=$('.sex').text();
+    $('form')[0].tel.value=$('.tel').text();
+    $('form')[0].mail.value=$('.mail').text();
+    $('form')[0].add.value=$('.add').text();
+
+    $('.save').click(function(){
+      console.log($('#name').val());
+      console.log($('form')[0].name.value);
+      // $('.name').text()=$('form')[0].name.attr("value");
+      $('.name').text($('#name').val());
+      $('.sex').text($('#sex').val());
+      $('.tel').text($('#tel').val());
+      $('.mail').text($('#mail').val());
+      $('.add').text($('#add').val());
+      // $('.name').text() = text('123');
+      // $(".name").attr("",$('#name').val());
+    });
+  </script>
+</body>
+</html>

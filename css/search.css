@@ -1,0 +1,17 @@
+.search{text-indent:3em;background-color:#eee;border:none;border-radius:10px;width:70vw;height:5vh;}
+.ic-search{position:relative;left:5rem;padding-top:4px;color:#999;}
+.i1{margin-top:3px;}
+.ixz{transform:rotate(180deg);}
+.ixz1{color:orange;}
+.img-search{width:11rem;height:11rem;}
+.search-p1{color:black;font-size:1.4rem;}
+.search-p2{color:red;font-size:1.4rem;}
+.search-p3{color:red;font-size:1.8rem;}
+.search-p4{color:#999;font-size:1.4rem;}
+.sp{display:inline-block;margin-top:1rem;}
+.sp-l{border-bottom:1px solid #ddd;}
+.footer{margin-top:40px;font-size:14px;color:#999;padding-bottom:20px;}
+.rocket{
+	background-image:url('../images/index/rtop.png');background-size:100% 100%;width:4.4rem;height:4.4rem;
+	position:fixed;bottom:10rem;right:2rem;cursor:pointer;display:none;
+}

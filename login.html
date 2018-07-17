@@ -1,0 +1,173 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+  <title>suning</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+</head>
+<style>
+  .am-g{border-bottom:1px solid #ddd;}
+  .i1{color:#999;}
+  .tab-title{width:100%;border-bottom:1px solid #ddd;display:inline-block;height:60px;}
+  .tab-title>li{display:inline-block;color:#999;width:45%;height:100%;line-height:60px;}
+   .tab-title>li.select{color:black;border-bottom:2px solid red;}
+  .tab-content>li{display:none !important;}
+  .tab-content>li.select{display:block !important;}
+  .yzm1{margin-right:-2em;}
+  .am-form-group{border-bottom:1px solid #ddd;padding-bottom:15px;}
+  input{border:none !important;}
+  .zhuche{border:none;}
+  .linef{position:relative;}
+  /*.footer{position:fixed;bottom:10px;}*/
+  .line{border-bottom:1px solid #ccc;}
+  .line>span{position:absolute;bottom:-1.3rem;left:35%;background-color:white;padding:0 15px;}
+  .other{border:none;}
+  .q{color:black;font-size:14px;}
+</style>
+<body>
+<div>
+  <div class='am-g am-padding-vertical'>
+    <div class='am-u-sm-12 am-text-center'>
+      <a href="indexlogin.html"><i class='am-icon-arrow-left am-fl i1'></i></a><span>登录</span>
+    </div>
+  </div>
+  <div>
+      <ul class='tab-title am-text-center am-padding-horizontal-0 am-margin-horizontal-0'>
+        <li class='select'>快捷登录</li>
+        <li class=''>账号密码登录</li>
+      </ul>
+      <ul class='tab-content am-margin-left-0 am-padding-left-0'>
+        <li class='select'>
+          <form action="" class='am-form am-form-horizontal'>
+            <fieldset>
+              <div class='am-form-group'>
+               <label for="id" class="am-u-sm-3 am-form-label am-text-sm">手机号</label>
+               <div class="am-u-sm-5 am-u-end">
+                 <input name='tel' type="text" id='tel' class='id am-form-field' placeholder="请输入手机号">
+               </div>
+              </div>
+              <div class='am-form-group'>
+               <label for="yzm" class="am-u-sm-4 am-form-label yzm1 am-text-sm">手机验证码</label>
+               <div class="am-u-sm-5">
+                 <input name='yzm' type="text" id='yzm' class='id am-form-field' placeholder="请输入手机验证码">
+               </div>
+               <span class="am-u-sm-3 am-margin-left-0 am-padding-left-0"><a class='am-text-middle am-text-sm' href="#">获取验证码</a></span>
+              </div>
+              <div class=''>
+               <div class="am-g">
+                 <a href="index.html">
+                   <button type="button" class="am-btn am-btn-warning am-u-sm-12 am-radius am-margin-top am-padding-vertical-sm">登录</button>
+                 </a>
+               </div>
+            </div>
+            <div>
+              <div class='am-cf am-margin-vertical'>
+                <a class='am-fl am-text-danger am-text-xs' href="#"> 门店卡登录</a>
+                <a class='am-fr am-text-xs' href="#">忘记密码? </a>
+              </div>
+            </div>
+            <div class="am-g zhuche">
+               <a href="register.html">
+                 <button type="button" class="am-btn am-btn-default am-u-sm-4 am-u-sm-offset-4 am-radius am-margin-top am-margin-bottom am-padding-vertical-sm">快速注册</button>
+               </a>
+               
+             </div>
+            </fieldset>
+          </form>
+        </li>
+        <li class=''>
+          <form action="" class='am-form am-form-horizontal'>
+            <fieldset>
+              <div class='am-form-group'>
+               <label for="id" class="am-u-sm-3 am-form-label am-text-sm">账 号</label>
+               <div class="am-u-sm-7 am-u-end">
+                 <input name='tel' type="text" id='tel' class='id am-form-field' placeholder="手机号/邮箱/用户名/会员卡">
+               </div>
+              </div>
+              <div class='am-form-group'>
+               <label for="yzm" class="am-u-sm-4 am-form-label yzm1 am-text-sm">密 码</label>
+               <div class="am-u-sm-7 am-u-end">
+                 <input name='yzm' type="text" id='yzm' class='id am-form-field' placeholder="请输入6-20位易购密码">
+               </div>
+              </div>
+              <div class=''>
+                <div class="am-g">
+                  <a href="index.html">
+                    <button type="button" class="am-btn am-btn-warning am-u-sm-12 am-radius am-margin-top am-padding-vertical-sm">登录</button>
+                    </div>
+                  </a>
+                 
+            </div>
+            <div>
+              <div class='am-cf am-margin-vertical'>
+                <a class='am-fl am-text-danger am-text-xs' href=""> 门店卡登录</a>
+                <a class='am-fr am-text-xs' href="#">忘记密码? </a>
+              </div>
+            </div>
+            <div class="am-g zhuche">
+               <a href="register.html">
+                 <button type="button" class="am-btn am-btn-default am-u-sm-4 am-u-sm-offset-4 am-radius am-margin-top am-margin-bottom am-padding-vertical-sm">快速注册</button>
+               </a>
+             </div>
+            </fieldset>
+          </form>
+        </li>
+        <div class="footer am-margin-top">
+          <div class='linef'>
+            <div class='line'><span>其他方式登录</span></div>
+          </div>
+          <div class='am-g am-text-center am-margin-top other'>
+            <span class='am-u-sm-3 am-u-sm-offset-3'><a href=""><i class='am-icon-qq am-text-xl'></i><br><span class='q'>QQ</span></a></span>
+            <span class='am-u-sm-3 am-u-end'><a href=""><i class='am-icon-weixin am-text-xl'></i><br><span class='q'>微信</span></a></span>
+          </div>
+        </div>
+      </ul>
+  </div>
+</div>
+  
+<!--在这里编写你的代码-->
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+ <!--  // <script src="assets/js/jquery.min.js"></script> -->
+ <script src="js/jquery-3.3.1.js"></script>
+ <script src="js/util.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src='assets/js/handlebars.min.js'></script>
+  <script src='assets/js/amazeui.widgets.helper.js'></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

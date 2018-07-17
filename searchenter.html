@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+  <title>suning</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/placeorder.css">
+  <link rel="stylesheet" href="css/success.css">
+  <link rel="stylesheet" href="css/search.css">
+  <style>
+    .search-point{text-align:center;}
+    .search-point>span{background-color:#eee;margin:1rem 1rem;width:30vw;display:inline-block;padding:0.5rem 0;}
+    .delete{color:#aaa;padding-left:1rem;display:none;}
+    .delete1{display:inline-block;}
+  </style>
+</head>
+<body>
+<div>
+  <div class='am-g am-padding-vertical-sm con' style="border-bottom:1px solid #ddd;">
+    <div class='am-u-sm-12 am-text-center'>
+      <a href="index.html"><i class='am-icon-arrow-left am-fl i1'></i></a>
+      <i class='am-icon-search ic-search am-fl'></i><input type="text" class='search' placeholder='家装爆款跨店优惠'>
+      <a href="search.html" class='am-fr i1'>搜索</a>
+    </div>
+    <div class='am-cf am-margin-top' style='height:50px;'></div>
+    <div class='am-padding-bottom-sm' style="border-bottom:1px solid #ddd;">
+      <p class='am-margin-left' style="font-size:18px;color:#999;">热门搜索</p>
+      <ul class='am-avg-sm-3'>
+        <li class='search-point'><span><a href="search.html" style="color:black;">空调柜机</a></span></li>
+        <li class='search-point'><span>Swisse</span></li>
+        <li class='search-point'><span>企鹅兵书</span></li>
+        <li class='search-point'><span>空调</span></li>
+        <li class='search-point'><span>电视</span></li>
+        <li class='search-point'><span>iPhoneX</span></li>
+        <li class='search-point'><span>冰箱</span></li>
+        <li class='search-point'><span>显示器</span></li>
+        <li class='search-point'><span>沙发</span></li>
+        <li class='search-point'><span>微波炉</span></li>
+        <li class='search-point'><span>热水器</span></li>
+        <li class='search-point'><span>牛奶</span></li>
+      </ul>
+    </div>
+    <div class='am-margin-top'>
+      <p class='am-margin-left' style="font-size:18px;color:#999;">历史搜索<i class='am-icon-trash am-fr am-margin-right del'></i></p>
+      <ul class='am-avg-sm-3'>
+        <li class='search-point'><span>运动服<i class='am-icon-trash delete del1'></i></span></li>
+        <li class='search-point'><span>玩具<i class='am-icon-trash delete del2'></i></span></li>
+        <li class='search-point'><span>ipad<i class='am-icon-trash delete del3'></i></span></li>
+        <li class='search-point'><span>苹果8<i class='am-icon-trash delete del4'></i></span></li>
+        <li class='search-point'><span>冰箱<i class='am-icon-trash delete del5'></i></span></li>
+        <li class='search-point'><span>手机<i class='am-icon-trash delete del6'></i></span></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<!--在这里编写你的代码-->
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+ <!--  // <script src="assets/js/jquery.min.js"></script> -->
+ <script src="js/jquery-3.3.1.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src='assets/js/handlebars.min.js'></script>
+  <script src='assets/js/amazeui.widgets.helper.js'></script>
+  <script src='js/swiper.js'></script>
+  <script src='js/placeorder.js'></script>
+  <script>
+    $('.icon-xz').click(function(){
+      $('.icon-xz1').toggleClass('ixz');
+      $('.icon-xz').toggleClass('ixz1');
+    });
+  </script>
+  <script>
+    $(window).scroll(function(e){
+      if($(this).scrollTop()>100){
+        if($('.rocket:visible').length===0)
+          $('.rocket').fadeIn();
+      }else{
+        if($('.rocket:visible').length===1)
+          $('.rocket').fadeOut();
+      }
+    });
+    $(function(){
+      $('.rocket').click(function(){
+        $('body,html').animate({scrollTop:0},600);
+      });
+    });
+  </script>
+  <script>
+    $('.del').click(function(){
+      $('.delete').toggleClass('delete1');
+    });
+    $('.del1').click(function(){$('.del1').parent().parent().remove();});
+    $('.del2').click(function(){$('.del2').parent().parent().remove();});
+    $('.del3').click(function(){$('.del3').parent().parent().remove();});
+    $('.del4').click(function(){$('.del4').parent().parent().remove();});
+    $('.del5').click(function(){$('.del5').parent().parent().remove();});
+    $('.del6').click(function(){$('.del6').parent().parent().remove();});
+  </script>
+</body>
+</html>
